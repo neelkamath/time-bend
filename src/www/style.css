@@ -1,0 +1,148 @@
+@keyframes expand {
+    from {
+        transform: scale(0);
+    }
+}
+@keyframes disappear {
+    to {
+        transform: scale(0);
+    }
+}
+@keyframes rotateX {
+    to {
+        transform: rotateX(360deg);
+    }
+}
+@keyframes rotateY {
+    to {
+        transform: rotateY(360deg);
+    }
+}
+/* Keep this to prevent display size specific bugs if there are any images or videos used in the future. */
+img, video {
+    height: auto;
+    max-width: 100%;
+}
+input, select {
+    padding: 0.25em;
+}
+[type=button], [type=submit], select {
+    background-color: white;
+    border-radius: 3em;
+}
+[type=number], [type=text], #dayEnd, #dayStart {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0 0 0.1em 0;
+    text-align: center;
+}
+*:focus {
+    outline: none; /* Don't show ugly outlines when an element is selected. */
+}
+::placeholder {
+    color: #9fa09f;
+    opacity: 0.75;
+}
+.activity {
+    line-height: 2em;
+    margin: 0 -0.5em;
+    padding: 0.66em;
+}
+.activityTxt, .durationInput, .delActivity {
+    padding-bottom: 0.15em;
+}
+.clearFloat {
+    clear: both;
+}
+.completeActivity .activityDuration, .completeActivity .activityTxt {
+    text-decoration: line-through;
+}
+.completeActivity .activityDuration, .completeActivity .activityTxt, .invalidActivity .activityDuration,
+.invalidActivity .activityTxt {
+    border-color: rgba(0, 0, 0, 0.33);
+    transition: border-color 0.275s ease-in-out;
+}
+.completeActivity .activityDuration:focus, .completeActivity .activityTxt:focus,
+.invalidActivity .activityDuration:focus, .invalidActivity .activityTxt:focus {
+    border-color: rgba(0, 0, 0, 1);
+}
+.delActivity {
+    background-color: red !important;
+    border-color: black;
+    border-width: 0.15em;
+    font-weight: bolder;
+    height: 1.75em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    width: 1.75em;
+}
+.disappear {
+    animation-duration: 1s;
+    animation-name: disappear;
+}
+.durationInput {
+    margin-left: 1.25em;
+    width: 4em; /* Needed for the placeholder text to show in full. */
+}
+.expand {
+    animation-duration: 1s;
+    animation-name: expand;
+}
+.floatLeft {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+.incompleteActivity .activityDuration, .incompleteActivity .activityTxt, #newActivityMins, #newActivityTxt {
+    border-color: rgba(255, 255, 255, 0.33);
+    color: white;
+    transition: border-color 0.275s ease-in-out;
+}
+.incompleteActivity .activityDuration:focus, .incompleteActivity .activityTxt:focus, #newActivityMins:focus,
+#newActivityTxt:focus {
+    border-color: rgba(255, 255, 255, 1);
+}
+.statusTxt {
+    font-size: 0.75em;
+    font-variant: small-caps;
+    font-weight: bold;
+}
+.middleBlock {
+    display: block;
+    text-align: center;
+}
+.statusTxt {
+    margin-right: 1em;
+}
+.timingsTxt {
+    font-size: 0.85em;
+}
+#createNewActivity {
+    line-height: 1.75em;
+}
+#dayEnd, #dayStart {
+    color: white;
+    font-weight: 450;
+    margin-top: 0.6em;
+}
+#delOldActivitiesBlock {
+    display: none; /* Prevent this from flashing before the JavaScript does its work. */
+}
+#newActivityMins, #newActivityTxt {
+    color: white;
+}
+#reserveLeft {
+    color: white;
+    font-size: 2em;
+}
+#timings {
+    background: radial-gradient(circle at top left, #383a39, #161616);
+    color: white;
+    font-weight: bold;
+    margin: -0.5em;
+    padding: 0.75em;
+    text-align: center;
+}
+#timings input {
+    width: 6.5em;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "neelkamath.timebend",
+  "displayName": "TimeBend",
+  "version": "1.0.0",
+  "description": "A mobile app for Chetan Surpur's technique of time bending.",
+  "main": "index.js",
+  "author": "Neel Kamath",
+  "license": "MIT",
+  "dependencies": {
+    "cordova-android": "^7.1.4",
+    "cordova-plugin-whitelist": "^1.3.3"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}
