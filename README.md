@@ -23,13 +23,14 @@ This project has been deprecated because I later created a native version of it 
 
 1. Clone the repository with one of the following methods.
     - HTTPS: `git clone https://github.com/neelkamath/time-bend.git`
-    - HTTPS: `git clone git@github.com:neelkamath/time-bend.git`
+    - SSH: `git clone git@github.com:neelkamath/time-bend.git`
 1. `cd time-bend/src`
 1. `cordova prepare`
 
 # Usage
 
-`cordova build android`
+1. `cd time-bend/src`
+1. `cordova build android`
 
 The APK will be located at `time-bend/src/platforms/android/app/build/outputs/apk/debug/app-debug.apk`.
 
