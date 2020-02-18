@@ -4,6 +4,8 @@
     <img alt="Get it on Google Play" width="185" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" />
 </a>
 
+**Try out the web version [here](https://time-bend.netlify.com/).**
+
 This is a hybrid mobile app (made for use on Android) for Chetan Surpur's technique of [time bending](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwi8m7ONzrPfAhXYa94KHaukBw0QFjAAegQICRAB&url=http%3A%2F%2Fchetansurpur.com%2Fblog%2F2012%2F10%2Ftime-bending.html&usg=AOvVaw2584-fWlB1HTkSybKr876d). I have rewritten this project to run natively [here](https://github.com/neelkamath/time-bend-android).
 
 ![Screenshot](screenshot.png)
